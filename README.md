@@ -73,4 +73,4 @@ Abaixo está uma visão geral da estrutura de diretórios e arquivos do projeto:
 
 - **package-lock.json**: Arquivo gerado automaticamente que garante a consistência das versões das dependências instaladas. Ele bloqueia as versões exatas usadas no projeto.
 
-- **/designs**: (Opcional) Pasta onde os protótipos ou mockups de design exportados do Figma ou outras ferramentas são armazenados para referência visual.
+- **/designs**: Pasta onde os protótipos ou mockups de design exportados do Figma ou outras ferramentas são armazenados para referência visual.
