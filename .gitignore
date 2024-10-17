@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+
+# Tailwind CSS output
+src/styles.css
+
+# Diretórios de cache
+.vscode/
+
+# PostCSS
+postcss.config.js
+
+# Arquivos de lock do npm
+package-lock.json
+
+# Tailwind config
+tailwind.config.js
+
+# Prettier
+.prettierrc
