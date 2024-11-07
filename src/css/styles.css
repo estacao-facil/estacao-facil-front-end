@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+    svg {
+        @apply text-inherit fill-none size-6;
+    }
+
+}
+
+
+@layer components {
+
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+
+    .size-screen {
+        @apply h-screen w-screen;
+    }
+
+    /* Input */
+
+    .field-container {
+        @apply w-full flex flex-col gap-2;
+    }
+
+    .field-label {
+        @apply text-sm font-bold hover:cursor-pointer;
+    }
+
+    .input-container {
+        @apply w-full px-4 py-3 flex items-center gap-2 border border-border rounded-xl transition-colors duration-200;
+    }
+
+    .input-icon-label {
+        @apply hover:cursor-pointer
+    }
+
+    .input-icon {
+        @apply size-6 text-icon-placeholder transition-colors duration-200;
+    }
+
+    .input {
+        @apply w-full p-0 bg-transparent border-none placeholder:text-icon-placeholder-600 focus:ring-0;
+    }
+
+    .field-message {
+        @apply -mt-2 text-sm;
+    }
+
+    /* Focus */
+
+    .input-container:focus-within {
+        @apply border-primary-500;
+    }
+
+    .input-container:focus-within .input-icon {
+        @apply text-primary-500;
+    }
+
+    /* Erro */
+
+    .field-container.error .field-label {
+        @apply text-error-300;
+    }
+
+    .field-container.error .input-container {
+        @apply border-error-300 bg-error-50;
+    }
+    
+    .field-container.error .input-icon {
+        @apply text-error-300;
+    }
+
+    .field-container.error .input {
+        @apply placeholder:text-error-300;
+    }
+    
+    .field-container.error .field-message {
+        @apply text-error-300;
+    }
+
+    .field-message.error {
+        @apply text-sm text-error-300;
+    }
+
+}

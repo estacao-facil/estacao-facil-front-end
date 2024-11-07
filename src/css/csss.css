@@ -1,0 +1,46 @@
+/* Importante: Certifique-se de que Tailwind CSS está configurado corretamente */
+
+/* Input */
+
+.input-container {
+    @apply w-full px-4 py-3 flex items-center gap-2 border border-gray-300 rounded-xl bg-white transition-colors duration-200;
+    /* Inicialmente, a borda é cinza. Ela mudará ao focar ou em erro */
+}
+
+.input-icon {
+    @apply h-6 w-6 text-gray-400 transition-colors duration-200;
+    /* Cor inicial do ícone */
+}
+
+.input {
+    @apply w-full bg-transparent border-none placeholder:text-gray-400 focus:outline-none;
+    /* Placeholder com cor cinza */
+}
+
+/* Estados de Foco */
+.input-container:focus-within {
+    @apply border-blue-500;
+}
+
+.input-container:focus-within .input-icon {
+    @apply text-blue-500;
+}
+
+/* Mensagem de Erro */
+.field-message {
+    @apply text-sm text-red-500;
+    /* Inicialmente, sem conteúdo. A cor será vermelha para erros */
+}
+
+/* Estado de Erro */
+.field-container.error .input-container {
+    @apply border-red-500;
+}
+
+.field-container.error .input-icon {
+    @apply text-red-500;
+}
+
+.field-container.error .field-message {
+    @apply text-red-500;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/styles.css">
+
+    <title>Redefinir Senha - Estação Fácil</title>
+
+</head>
+
+<body class="text-text">
+
+    <!-- Container Principal -->
+    <div class="w-screen max-w-full min-h-screen flex flex-col items-center gap-14 md:gap-10 overflow-x-hidden">
+
+        <!-- Gradiente de Fundo -->
+        <div class="w-full pt-10 md:pt-24 relative flex md:justify-center">
+
+            <div class="w-[125%] h-[350px] rounded-[50%] absolute -top-[140px] md:pt-24 hidden md:block z-[0] bg-primary-light blur-[50px]"></div>
+            
+        </div>
+
+        <main class="w-full max-w-[500px] px-8 z-[1] flex flex-col items-center gap-14 grow">
+
+            <h1 class="text-4xl font-bold text-center">Redefinir<br>Senha</h1>
+
+            <p class="text-center">Defina uma nova senha</p>
+
+            <form class="w-full flex flex-col gap-14" action="#">
+
+                <div class="w-full flex flex-col gap-6">
+
+                    <!-- Campo de Senha -->
+                    <div class="field-container">
+                        <label class="field-label" for="password">Senha</label>
+                        <div class="input-container">
+                            <label class="input-icon-label" for="password">
+                                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2M7 11V7a5 5 0 1 1 10 0v4"/>
+                                </svg>
+                            </label>
+                            <input class="input" type="password" name="password" id="password" placeholder="Digite sua senha">
+                            <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9 9 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a2.998 2.998 0 0 1-5.194-2.098A3 3 0 0 1 9.88 9.88M1 1l22 22"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <!-- Campo de Confirmar Senha -->
+                    <div class="field-container">
+                        <label class="field-label" for="password">Confirmar Senha</label>
+                        <div class="input-container">
+                            <label class="input-icon-label" for="password-confirm">
+                                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2M7 11V7a5 5 0 1 1 10 0v4"/>
+                                </svg>
+                            </label>
+                            <input class="input" type="password" name="password-confirm" id="password-confirm" placeholder="Confirme sua senha">
+                            <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9 9 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a2.998 2.998 0 0 1-5.194-2.098A3 3 0 0 1 9.88 9.88M1 1l22 22"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+
+                <input class="w-full py-3 bg-primary-500 text-text-contrast uppercase font-bold rounded-lg duration-200 hover:cursor-pointer hover:bg-primary-400" type="button" value="Redefinir Senha">
+
+            </form>
+
+        </main>
+
+        <footer class="md:mt-[7.5rem] w-full flex flex-col items-center">
+
+            <!-- Container de Conteúdo -->
+            <div class="w-full md:px-14">
+
+                <!-- Border Top -->
+                <div class="w-full pt-8 px-8 flex justify-center border-t border-border">  
+
+                    <!-- Conteúdo do Rodapé -->
+                    <div class="w-full max-w-[700px] flex flex-col md:flex-row md:justify-center gap-4 md:gap-10">
+
+                        <!-- Dúvidas -->
+                        <section class="w-full flex flex-col md:items-end md:justify-center gap-2">
+    
+                            <h3 class="font-medium">Dúvidas:</h3>
+                            <div class="flex flex-col md:items-end">
+                                <p>Envie um email para: </p>
+                                <a class="text-primary-500 hover:cursor-pointer" href="#">estacaofacil.contato@gmail.com</a>
+                            </div>
+            
+                        </section>
+                        
+                        <!-- Links Úteis -->
+                        <section class="w-full flex flex-col gap-2">
+            
+                            <h3 class="font-medium">Páginas Úteis</h3>
+                            <div class="flex flex-col gap-1">
+                                <a class="hover:cursor-pointer hover:underline" href="index.html">Início</a>
+                                <a class="hover:cursor-pointer hover:underline" href="index.html#sobre">Sobre o Produto</a>
+                                <a class="hover:cursor-pointer hover:underline" href="index.html#funcionalidades">Funcionalidades</a>
+                                <a class="hover:cursor-pointer hover:underline" href="index.html#faq">Perguntas Frequentes - FAQ</a>
+                                <a class="hover:cursor-pointer hover:underline" href="index.html#equipe">Equipe de Desenvolvimento</a>
+                                <a class="hover:cursor-pointer hover:underline" href="login.html">Login</a>
+                                <a class="hover:cursor-pointer hover:underline" href="cadastro.html">Cadastro</a>
+                                <a class="hover:cursor-pointer hover:underline" href="chat.html">Chat</a>
+                            </div>
+            
+                        </section>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Rubrica -->
+            <div class="w-full pt-7 pb-2 flex flex-col items-center gap-3 bg-gradient-to-t from-primary-light">
+
+                <img src="assets/images/horizontal-logo.svg" alt="Logo Estação Fácil">
+                <span class="uppercase">© 2024 Estação Fácil</span>
+
+            </div>
+
+        </footer>
+
+    </div>
+    
+</body>
+
+</html>

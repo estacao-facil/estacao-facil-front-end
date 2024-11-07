@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/styles.css">
+
+    <title>Cadastro - Estação Fácil</title>
+
+</head>
+
+<body class="text-text">
+
+    <!-- Container Principal -->
+    <div class="w-screen max-w-full min-h-screen flex flex-col items-center gap-14 md:gap-10 overflow-x-hidden">
+
+        <!-- Gradiente de Fundo -->
+        <div class="w-full pt-10 md:pt-24 relative flex md:justify-center">
+
+            <div class="w-[125%] h-[350px] rounded-[50%] absolute -top-[140px] md:pt-24 hidden md:block z-[0] bg-primary-light blur-[50px]"></div>
+            
+        </div>
+
+        <main class="w-full max-w-[380px] px-8 z-[1] flex flex-col items-center gap-14 grow">
+
+            <h1 class="text-4xl font-bold text-center">Esqueceu sua<br>Senha?</h1>
+
+            <p class="w-full max-w-[245px] text-center break-words">
+                Informe o endereço de e-mail associado a sua conta
+            </p>
+
+            <form class="w-full flex flex-col gap-14" action="#">
+
+                <!-- Campo de Email -->
+                <div class="field-container">
+                    <div class="input-container">
+                        <label class="input-icon-label" for="email">
+                            <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/>
+                            </svg>
+                        </label>
+                        
+                        <input class="input" type="email" name="email" id="email" placeholder="Digite seu email">
+                    </div>
+                    <span class="field-message"></span>
+                </div>
+
+                <input class="w-full py-3 bg-primary-500 text-text-contrast uppercase font-bold rounded-lg duration-200 hover:cursor-pointer hover:bg-primary-400" type="button" value="Enviar">
+
+            </form>
+
+        </main>
+
+        <footer class="md:mt-[7.5rem] w-full flex flex-col items-center">
+
+            <!-- Container de Conteúdo -->
+            <div class="w-full md:px-14">
+
+                <!-- Border Top -->
+                <div class="w-full pt-8 px-8 flex justify-center border-t border-border">  
+
+                    <!-- Conteúdo do Rodapé -->
+                    <div class="w-full max-w-[700px] flex flex-col md:flex-row md:justify-center gap-4 md:gap-10">
+
+                        <!-- Dúvidas -->
+                        <section class="w-full flex flex-col md:items-end md:justify-center gap-2">
+    
+                            <h3 class="font-medium">Dúvidas:</h3>
+                            <div class="flex flex-col md:items-end">
+                                <p>Envie um email para: </p>
+                                <a class="text-primary-500 hover:cursor-pointer" href="#">estacaofacil.contato@gmail.com</a>
+                            </div>
+            
+                        </section>
+                        
+                        <!-- Links Úteis -->
+                        <section class="w-full flex flex-col gap-2">
+            
+                            <h3 class="font-medium">Páginas Úteis</h3>
+                            <div class="flex flex-col gap-1">
+                                <a class="hover:cursor-pointer hover:underline" href="index.html">Início</a>
+                                <a class="hover:cursor-pointer hover:underline" href="index.html#sobre">Sobre o Produto</a>
+                                <a class="hover:cursor-pointer hover:underline" href="index.html#funcionalidades">Funcionalidades</a>
+                                <a class="hover:cursor-pointer hover:underline" href="index.html#faq">Perguntas Frequentes - FAQ</a>
+                                <a class="hover:cursor-pointer hover:underline" href="index.html#equipe">Equipe de Desenvolvimento</a>
+                                <a class="hover:cursor-pointer hover:underline" href="login.html">Login</a>
+                                <a class="hover:cursor-pointer hover:underline" href="cadastro.html">Cadastro</a>
+                                <a class="hover:cursor-pointer hover:underline" href="chat.html">Chat</a>
+                            </div>
+            
+                        </section>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Rubrica -->
+            <div class="w-full pt-7 pb-2 flex flex-col items-center gap-3 bg-gradient-to-t from-primary-light">
+
+                <img src="assets/images/horizontal-logo.svg" alt="Logo Estação Fácil">
+                <span class="uppercase">© 2024 Estação Fácil</span>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
