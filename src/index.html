@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/styles.css">
+
+    <title>Estação Fácil</title>
+
+</head>
+
+<body class="text-text">
+
+    <!-- Container Principal -->
+    <div class="w-full min-h-screen flex flex-col gap-[3.25rem]">
+
+        <header class="w-full p-5 md:px-14 flex items-center">
+
+            <div class="w-full px-3 pb-3 flex items-center gap-2 md:gap-4 border-b border-b-border">
+
+                <a class="h-[40px] grow" href="/"><img src="assets/images/horizontal-logo.svg" alt="Logo Estação Fácil"></a>
+
+                <a class="hidden md:block px-4 py-2 uppercase hover:cursor-pointer hover:underline">Cadastre-se</a>
+
+                <a class="px-4 py-2 bg-primary-500 text-text-contrast uppercase font-bold rounded-lg duration-200 hover:cursor-pointer hover:bg-primary-400">Login</a>
+
+                <button class="p-2 bg-primary-500 text-text-contrast rounded-lg duration-200 hover:cursor-pointer hover:bg-primary-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 10H3m18-4H3m18 8H3m18 4H3"/>
+                    </svg>
+                </button>
+
+            </div>
+
+        </header>
+
+        <main class="w-full flex flex-col items-center gap-[3.25rem]">
+
+            <!-- Inicio -->
+            <section class="w-full flex flex-col items-center gap-4 md:gap-5" id="inicio">
+
+                <img class="w-[175px]" src="assets/images/logo.svg" alt="Logo Estação Fácil">
+
+                <div class="w-full px-5  md:px-14 flex flex-col items-center gap-10">
+
+                    <div class="flex flex-col items-center gap-5">
+
+                        <h1 class="text-center text-4xl md:text-[3.5rem] font-bold leading-normal">Guia Inteligente<br>no Metrô SP</h1>
+
+                        <p class="w-full max-w-[296px] text-center">Respostas rápidas e precisas sobre as linha do metrô de São Paulo, para viagens mais tranquilas.</p>
+
+                    </div>
+
+                    <div class="max-w-[340px] flex flex-col items-center gap-2">
+
+                        <button class="w-full px-4 py-2 bg-primary-500 text-text-contrast uppercase font-bold rounded-lg duration-200 hover:cursor-pointer hover:bg-primary-400">Comece Agora</button>
+
+                        <p class="text-sm md:text-base">Se <a class="text-primary-500 font-semibold hover:cursor-pointer hover:underline hover:text-primary-400" href="cadastro.html">cadastre</a> para salvar suas conversas</p>
+
+                    </div>
+
+                </div>
+
+                <img class="w-full" src="assets/images/train.svg" alt="Desenho Ilustrativo de um Trem">
+
+            </section>
+
+            <!-- Apresentação do Produto -->
+            <section class="w-full px-5 flex flex-col md:flex-row items-center gap-5" id="sobre">
+
+                <div class="w-full flex flex-col justify-center items-end gap-3">
+
+                    <h1 class="w-full text-center md:text-right text-4xl font-bold leading-normal">Cecília será sua<br>assistente</h1>
+                    <p class="hidden md:block text-right">É só inciar uma conversa<br>e tirar suas dúvidas</p>
+
+                </div>
+
+                <!-- Imagem da Interface Responsiva - Alterna Entre Mobile, Tablet e Desktop -->
+                <div class="w-full flex-center">
+
+                    <img class="w-[235px] md:hidden" src="assets/images/phone-template.png" alt="Exemplo da Interface Mobile">
+                    <img class="w-[220px] hidden md:block lg:hidden" src="assets/images/tablet-tempĺate.png" alt="Exemplo da Interface em Tablets">
+                    <img class="w-[424px] hidden lg:block" src="assets/images/desktop-template.png" alt="Exemplo da Interface Desktop">
+
+                </div>
+
+                <p class="w-full -mt-3 text-center md:hidden">É só inciar uma conversa<br>e tirar suas dúvidas</p>
+
+            </section>
+
+            <!-- Principais Funcionalidades -->
+            <section class="w-full px-5 flex flex-col md:flex-row-reverse items-center gap-5" id="funcionalidades">
+
+                <div class="w-full flex flex-col justify-center items-div gap-3">
+
+                    <h1 class="w-full text-center md:text-left text-4xl font-bold leading-normal">Principais<br>Funcionalidades</h1>
+                    <span class="text-xl font-bold hidden md:block">E muitas outras!</span>
+
+                </div>
+
+                <div class="w-full flex justify-center">
+
+                    <ul class="w-full max-w-[424px] flex flex-col justify-center gap-5">
+
+                        <!-- Detecção de Localidade -->
+                        <li class="w-full p-3 flex flex-col gap-2 border border-border rounded-lg">
+    
+                            <svg class="size-6 text-icon-placeholder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M.282.076C-.011.222-.011.21.006 3.584c.012 3.122.012 3.151.135 3.274.176.176.504.176.698-.006l.146-.134V.995h2.862C6.098.99 6.726.978 6.802.913a.518.518 0 0 0 0-.796C6.662.006 6.556 0 3.542 0 1.162 0 .393.017.282.076M17.216.117a.48.48 0 0 0-.164.563c.123.322.04.31 3.125.316h2.855v2.852c.006 2.255.018 2.882.083 2.958.176.234.58.252.78.035.1-.111.105-.31.105-3.333V.298l-.135-.134L23.73.03 20.546.012C17.44 0 17.362 0 17.216.117"/>
+                                <path fill="currentColor" d="M3.296 3.07a.48.48 0 0 0-.252.269c-.106.304-.088 5.095.017 5.353.14.328.164.334 3.043.316l2.616-.017.134-.135.135-.135.018-2.624C9.019 4.41 9 3.415 8.96 3.315 8.843 3 8.73 2.987 5.987 2.987c-1.982.006-2.55.024-2.691.082M8.01 6.02l.012 2.003-2.006-.011-2.01-.018-.018-1.933c-.006-1.06 0-1.968.017-2.009.018-.058.446-.07 2.006-.058l1.981.017z"/>
+                                <path fill="currentColor" d="M5.16 5.172c-.117.123-.129.199-.129.825 0 .375.024.738.059.797.088.164.375.234.95.234.85 0 .985-.134.985-.99 0-.568-.07-.855-.235-.942-.058-.036-.422-.059-.809-.059-.65 0-.703.006-.82.135M10.385 3.034a.5.5 0 0 0-.252.17c-.1.129-.117.234-.117.808s.017.68.123.814c.164.211.522.217.727.006.14-.135.146-.176.146-.808 0-.58-.017-.691-.117-.814-.117-.153-.281-.211-.51-.176M15.305 3.075a.5.5 0 0 0-.247.24c-.04.1-.058 1.096-.047 2.782l.018 2.624.135.135.135.135 2.615.017c2.879.018 2.902.012 3.043-.316.106-.258.123-5.049.018-5.353-.123-.346-.176-.352-2.967-.352-2.03.006-2.545.018-2.703.088m4.708 2.929v1.991l-2.005.018-2.011.011v-1.98c0-1.089.017-2.002.04-2.02.024-.023.927-.035 2.006-.03l1.97.018z"/>
+                                <path fill="currentColor" d="M17.24 5.078c-.165.064-.247.363-.247.92 0 .901.123 1.03.991 1.03.557 0 .798-.058.92-.222.053-.07.077-.322.083-.809 0-.661-.006-.714-.135-.831-.123-.117-.194-.129-.839-.123-.38 0-.733.017-.774.035M12.378 4.024c-.076.011-.187.093-.252.175-.105.135-.117.235-.117.99v.844h-1.754l-.117.152c-.164.205-.152.45.018.65l.14.164h2.428l.14-.164c.136-.158.142-.205.142-.972v-.808l.363-.036c.3-.029.393-.058.498-.187.176-.2.17-.451-.005-.656-.135-.152-.165-.158-.745-.17-.334-.006-.669 0-.739.018M11.159 8.17l-.147.141v2.7h-.351c-.3 0-.381.024-.499.147-.2.193-.2.51 0 .702.14.147.147.147 1.284.147.727 0 1.197-.024 1.29-.065.293-.134.34-.656.077-.843-.077-.053-.258-.088-.464-.088h-.34V9.02h.792c.451 0 .844-.03.926-.065.293-.134.364-.556.13-.784-.141-.147-.147-.147-1.35-.147-1.201 0-1.207 0-1.348.147M3.172 10.156l-.164.14v3.4210000000000003l.164.141c.2.17.446.181.651.018l.153-.118v-1.751h.844c.798 0 .856-.006 1.003-.134.205-.17.217-.522.035-.71-.111-.11-.211-.122-.99-.152l-.863-.029-.017-.363c-.018-.31-.042-.38-.17-.486-.2-.158-.446-.146-.646.023M14.231 10.091c-.182.141-.229.328-.229.95 0 .614 0 .626.176.802.159.152.211.175.4.146.369-.064.421-.187.421-.99 0-.662-.006-.703-.146-.837-.159-.158-.464-.194-.622-.07M17.186 10.156l-.164.14-.017 1.353-.018 1.353h-1.648l-.17.17-.17.17v1.652h-.328c-.282 0-.346.023-.498.17-.094.093-.17.228-.17.298 0 .17.152.445.263.492.053.018.399.035.768.035.64 0 .68-.006.816-.146.14-.135.146-.164.146-.996v-.85h.85c.833 0 .862-.005.997-.146l.147-.14v-2.7h.352c.299 0 .38-.024.498-.147.211-.205.205-.562-.006-.726-.135-.105-.24-.123-.82-.123-.616 0-.675.012-.828.14M8.169 11.157c-.141.135-.147.164-.147.996v.85h-.85c-.833 0-.862.005-.997.146a.45.45 0 0 0-.147.351c0 .147.047.258.147.352l.14.146h2.17c1.19 0 2.21-.018 2.264-.035.11-.047.263-.322.263-.492 0-.07-.076-.205-.17-.299l-.17-.17H9.02v-1.6509999999999998l-.17-.17c-.223-.217-.481-.229-.68-.024M20.195 11.134l-.153.117v1.751h-.346c-.469 0-.65.14-.65.498 0 .205.029.281.152.375.135.105.24.123.82.123.616 0 .675-.012.828-.14l.164-.141v-2.425l-.165-.14c-.199-.17-.445-.182-.65-.018M12.267 14.068c-.21.1-.258.305-.258 1.13v.791h-1.653l-.17.17c-.17.17-.17.181-.17.855 0 .644.005.685.146.82.094.1.205.146.352.146.34 0 .498-.204.498-.644v-.351h.997v.351c0 .44.159.645.499.645a.45.45 0 0 0 .352-.147l.146-.14v-1.687c-.006-1.77-.006-1.798-.276-1.939-.152-.082-.293-.082-.463 0M3.284 15.052c-.287.117-.305.27-.305 2.958 0 2.77.006 2.829.352 2.952.135.04.973.064 2.68.064 2.714 0 2.832-.011 2.949-.328.04-.1.058-1.095.047-2.782l-.018-2.624-.135-.134-.135-.135-2.65-.012c-1.542-.006-2.709.012-2.785.041m4.726 2.94-.018 2.01H4.005l-.017-1.933c-.006-1.06 0-1.968.017-2.003.018-.059.475-.077 2.023-.077h1.994z"/>
+                                <path fill="currentColor" d="M5.295 17.056c-.24.128-.264.222-.264.954 0 .668.006.72.135.838.123.117.2.129.827.129.375 0 .739-.024.797-.059.165-.088.235-.375.235-.949 0-.58-.076-.802-.323-.914-.193-.087-1.249-.087-1.407 0M17.24 15.088c-.288.199-.282.685.005.831.082.047.587.076 1.449.088l1.319.012.017.85c.012.772.024.854.141.977.135.147.44.182.634.076.187-.1.234-.392.234-1.417 0-1.101-.059-1.353-.323-1.452-.087-.036-.832-.059-1.747-.059-1.372 0-1.618.012-1.73.094M.364 17.026a.47.47 0 0 0-.235.147c-.105.111-.11.28-.11 3.332v3.21l.134.135.135.134H3.5c3.026 0 3.225-.006 3.336-.105.217-.2.2-.603-.035-.779-.076-.065-.703-.076-2.955-.082H.986V20.16c0-2.8 0-2.864-.118-2.987-.07-.07-.146-.13-.176-.13a1 1 0 0 1-.129-.023.6.6 0 0 0-.199.006M15.293 17.061c-.194.1-.294.31-.294.639v.28h-.263c-.329 0-.604.136-.675.329-.035.082-.058.503-.058.937v.785h-2.75l-.118.152c-.164.205-.152.451.018.65l.14.164H13c2.134 0 1.958.1 2-1.13l.029-.861.363-.018c.311-.017.381-.04.487-.17.106-.134.117-.234.117-.831-.006-.732-.035-.838-.316-.943-.2-.076-.211-.07-.387.017M23.332 17.05c-.3.117-.294.058-.3 3.11v2.858h-2.855c-3.113.006-3.008-.006-3.131.34a.48.48 0 0 0 .24.58c.118.058.833.07 3.296.058l3.148-.012.135-.135.135-.134v-3.216c0-3.139 0-3.221-.117-3.332a.54.54 0 0 0-.551-.117"/>
+                                <path fill="currentColor" d="M18.307 18.063c-.258.111-.317.34-.317 1.212v.756h-.328c-.176 0-.376.023-.434.058-.159.088-.24.375-.165.592.112.316.276.345 1.941.345 1.847 0 1.976-.035 1.976-.538 0-.399-.064-.422-1.067-.457l-.897-.03-.012-.79c-.023-.996-.029-1.043-.281-1.148-.235-.094-.188-.094-.416 0"/>
+                            </svg>
+    
+                            <div>
+    
+                                <h3 class="font-bold">Detecção de Localidade</h3>
+    
+                                <p>Escaneie um dos QR Codes disponíveis pela estação para identificar sua posição.</p>
+    
+                            </div>
+    
+                        </li>
+    
+                        <!-- Infamações em Tempo Real -->
+                        <li class="w-full p-3 flex flex-col gap-2 border border-border rounded-lg">
+    
+                            <svg class="size-6 text-icon-placeholder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2"/></svg>
+                            <div>
+    
+                                <h3 class="font-bold">Informações em Tempo Real</h3>
+    
+                                <p>Receba atualizações sobre horários, atrasos e lotação dos trens.</p>
+    
+                            </div>
+    
+                        </li>
+    
+                        <!-- Dicas e Recomendações -->
+                        <li class="w-full p-3 flex flex-col gap-2 border border-border rounded-lg">
+    
+                            <svg class="size-6 text-icon-placeholder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4zM8 2v16M16 6v16"/>
+                            </svg>
+    
+                            <div>
+    
+                                <h3 class="font-bold">Dicas e Recomendações</h3>
+    
+                                <p>Encontre restaurantes próximos às estações.</p>
+    
+                            </div>
+    
+                        </li>
+    
+    
+                    </ul>
+
+                </div>
+                
+
+                <span class="text-xl font-bold md:hidden">E muitas outras!</span>
+
+            </section>
+
+            <!-- Perguntas Frequentes -->
+            <section class="w-full px-5 flex flex-col items-center gap-5" id="faq">
+
+                    <h1 class="text-center text-4xl font-bold leading-normal">Perguntas<br>Frequentes</h1>
+
+                    <!-- Perguntas -->
+                    <ul class="w-full max-w-[496px] flex flex-col items-center gap-5">
+
+                        <li class="w-full p-3 flex items-center gap-2 bg-primary-500 text-text-contrast rounded">
+
+                            <p class="w-full font-medium">A Cecília é uma inteligência artificial?</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14M5 12h14"/>
+                            </svg>
+
+                        </li>
+
+                        <li class="w-full p-3 flex items-center gap-2 bg-primary-500 text-text-contrast rounded">
+
+                            <p class="w-full font-medium">Como funciona a localização por QR Code?</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14M5 12h14"/>
+                            </svg>
+
+                        </li>
+
+                        <li class="w-full p-3 flex items-center gap-2 bg-primary-500 text-text-contrast rounded">
+
+                            <p class="w-full font-medium">Como eu inicio uma conversa com a Cecília?</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14M5 12h14"/>
+                            </svg>
+
+                        </li>
+
+                        <li class="w-full p-3 flex items-center gap-2 bg-primary-500 text-text-contrast rounded">
+
+                            <p class="w-full font-medium">Preciso instalar algum aplicativo para usar o chat?</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14M5 12h14"/>
+                            </svg>
+
+                        </li>
+
+                        <li class="w-full p-3 flex items-center gap-2 bg-primary-500 text-text-contrast rounded">
+
+                            <p class="w-full font-medium">Quais tipos de informações a Cecília pode oferecer?</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14M5 12h14"/>
+                            </svg>
+
+                        </li>
+
+                        <li class="w-full p-3 flex items-center gap-2 bg-primary-500 text-text-contrast rounded">
+
+                            <p class="w-full font-medium">Preciso criar uma conta para usar o chat?</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14M5 12h14"/>
+                            </svg>
+
+                        </li>
+
+                        <li class="w-full p-3 flex items-center gap-2 bg-primary-500 text-text-contrast rounded">
+
+                            <p class="w-full font-medium">O chat está disponível apenas na linha 4 (amarela)?</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14M5 12h14"/>
+                            </svg>
+
+                        </li>
+
+                    </ul>
+
+            </section>
+
+            <!-- Chamada Final -->
+            <section class="w-full max-w-[340px] px-5 flex flex-col gap-5">
+
+                <h1 class="text-center text-4xl font-bold leading-normal">Use Agora!</h1>
+
+                <p class="text-center">Descubra como a Cecília pode te ajudar a viajar melhor metrô de SP.</p>
+
+                <button class="w-full px-4 py-2 bg-primary-500 text-text-contrast uppercase font-bold rounded-lg duration-200 hover:cursor-pointer hover:bg-primary-400">Quero Experimentar</button>
+
+            </section>
+
+        </main>
+
+        <footer class="md:mt-[7.5rem] w-full flex flex-col items-center">
+
+            <!-- Container de Conteúdo -->
+            <div class="w-full md:px-14">
+
+                <!-- Border Top -->
+                <div class="w-full pt-8 px-8 flex justify-center border-t border-border">
+
+                    <!-- Conteúdo do Rodapé -->
+                    <div class="w-full max-w-[700px] flex flex-col md:flex-row md:justify-center gap-4 md:gap-10">
+
+                        <!-- Dúvidas -->
+                        <section class="w-full flex flex-col md:items-end md:justify-center gap-2">
+
+                            <h3 class="font-medium">Dúvidas:</h3>
+                            <div class="flex flex-col md:items-end">
+                                <p>Envie um email para: </p>
+                                <a class="text-primary-500 hover:cursor-pointer" href="#">estacaofacil.contato@gmail.com</a>
+                            </div>
+
+                        </section>
+
+                        <!-- Links Úteis -->
+                        <section class="w-full flex flex-col gap-2">
+
+                            <h3 class="font-medium">Páginas Úteis</h3>
+                            <div class="flex flex-col gap-1">
+                                <a class="hover:cursor-pointer hover:underline" href="index.html">Início</a>
+                                <a class="hover:cursor-pointer hover:underline" href="index.html#sobre">Sobre o Produto</a>
+                                <a class="hover:cursor-pointer hover:underline" href="index.html#funcionalidades">Funcionalidades</a>
+                                <a class="hover:cursor-pointer hover:underline" href="index.html#faq">Perguntas Frequentes - FAQ</a>
+                                <a class="hover:cursor-pointer hover:underline" href="/desenvolvedores.html">Equipe de Desenvolvimento</a>
+                                <a class="hover:cursor-pointer hover:underline" href="login.html">Login</a>
+                                <a class="hover:cursor-pointer hover:underline" href="cadastro.html">Cadastro</a>
+                                <a class="hover:cursor-pointer hover:underline" href="chat.html">Chat</a>
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Rubrica -->
+            <div class="w-full pt-7 pb-2 flex flex-col items-center gap-3 bg-gradient-to-t from-primary-light">
+
+                <img src="assets/images/horizontal-logo.svg" alt="Logo Estação Fácil">
+                <span class="uppercase">© 2024 Estação Fácil</span>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
