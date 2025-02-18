@@ -1,0 +1,85 @@
+import type { Config } from "tailwindcss"
+
+export default {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: "#E6F2FF",
+          100: "#CCE6FF",
+          200: "#99CCFF",
+          300: "#66B5FF",
+          400: "#339AFF",
+          DEFAULT: "#006FFD",
+          600: "#0061E6",
+          700: "#0055CC",
+          800: "#0048B3",
+          900: "#003C99",
+        },
+        "primary-light": "#6AA5F0",
+        text: {
+          DEFAULT: "#2F3036",
+          contrast: "#FFFFFF",
+        },
+        border: {
+          DEFAULT: "#C5C6CC",
+          600: "#9D9EA3",
+          700: "#76777A",
+        },
+        "icon-placeholder": {
+          DEFAULT: "#8F9098",
+          600: "#7F8088",
+          700: "#6F7078",
+        },
+        error: {
+          50: "#FFE6E6",
+          100: "#FFCCCC",
+          200: "#FF9999",
+          300: "#FF6666",
+          400: "#FF3333",
+          500: "#FF0000",
+          600: "#E60000",
+          700: "#CC0000",
+          800: "#B30000",
+          900: "#990000",
+        },
+        success: {
+          50: "#E6F9E6",
+          100: "#CCF2CC",
+          200: "#99E699",
+          300: "#66D966",
+          400: "#33CC33",
+          500: "#00BF00",
+          600: "#00AC00",
+          700: "#009900",
+          800: "#008000",
+          900: "#006600",
+        },
+        warning: {
+          50: "#FFF9E6",
+          100: "#FFF2CC",
+          200: "#FFE699",
+          300: "#FFDB66",
+          400: "#FFCF33",
+          500: "#FFC300",
+          600: "#E6B000",
+          700: "#CC9E00",
+          800: "#B38B00",
+          900: "#997900",
+        },
+      },
+      fontFamily: { poppins: ["var(--font-poppins)"] },
+      screens: {
+        sm: "360px",
+        md: "768px",
+        xl: "1200px",
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config

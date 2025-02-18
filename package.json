@@ -1,21 +1,30 @@
 {
   "name": "estacao-facil-front-end",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build:css": "tailwindcss -i ./src/css/styles.css -o ./src/dist/styles.css --watch"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "svgo": "^3.3.2",
-    "tailwindcss": "^3.4.14"
+    "next": "15.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.9"
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9.20.1",
+    "eslint-config-next": "15.1.7",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-tailwindcss": "^3.18.0",
+    "postcss": "^8",
+    "prettier": "^3.5.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
