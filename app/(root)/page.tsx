@@ -1,14 +1,21 @@
 import Header from "@/components/Header"
+import Start from "@/components/Start"
+
+import Train from "@/public/images/train.svg"
 
 const Home = () => {
   return (
     <>
       <Header />
 
-      <main>
-        <div className="flex h-screen items-center justify-center">
-          <h1 className="text-3xl font-bold text-primary">Estação Fácil</h1>
-        </div>
+      <main className="w-full overflow-x-clip">
+        <Start />
+
+        <Train
+          width={600}
+          height={120}
+          className="mt-4 h-auto min-h-[120px] w-full min-w-[600px] md:mt-5"
+        />
       </main>
     </>
   )

@@ -33,9 +33,9 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky left-0 top-0 w-full overflow-x-clip px-5 transition-transform duration-300 ${isVisible || mobileMenu ? "translate-y-0" : "-translate-y-full"}`}
+      className={`index-container sticky left-0 top-0 w-full overflow-x-clip transition-transform duration-300 ${isVisible || mobileMenu ? "translate-y-0" : "-translate-y-full"}`}
     >
-      <div className="flex items-center border-b border-border px-3 py-6 lg:px-5">
+      <div className="flex items-center border-b border-border px-3 py-4 md:p-3 lg:px-5">
         <div className="flex gap-6">
           <Link href="/">
             <Image
@@ -56,14 +56,15 @@ const Header = () => {
           <Link href="/cadastro" className="link hidden md:block">
             Cadastrar-se
           </Link>
-          <Link
-            href="/login"
-            className="cursor-pointer rounded-lg bg-primary px-4 py-2 text-xs font-bold uppercase text-text-contrast transition-all duration-100 hover:bg-primary-400 md:text-base"
-          >
+          <Link href="/login" className="button text-xs md:text-base">
             Login
           </Link>
-          <Button className="p-2 lg:hidden" onClick={() => setMobileMenu(true)}>
-            <AlignJustifyIcon width={16} height={16} className="md:size-6" />
+          <Button
+            className="h-fit !p-2 text-xs md:!p-3 md:text-base lg:hidden"
+            aria-label="Abrir menu mobile"
+            onClick={() => setMobileMenu(true)}
+          >
+            <AlignJustifyIcon width={16} height={16} />
           </Button>
         </div>
       </div>
@@ -73,15 +74,16 @@ const Header = () => {
         onClick={() => setMobileMenu(false)}
       >
         <div
-          className={`absolute right-0 top-0 h-screen w-72 bg-white p-6 shadow-lg transition-transform duration-300 ease-in-out md:w-96 ${
+          className={`absolute right-0 top-0 h-screen w-72 bg-white px-8 py-4 shadow-lg transition-transform duration-300 ease-in-out md:w-96 ${
             mobileMenu ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <Button
-            className="ml-auto block p-2"
+            className="button ml-auto block !p-2 md:!p-3"
+            aria-label="Fechar menu mobile"
             onClick={() => setMobileMenu(false)}
           >
-            <Cancel width={16} height={16} className="md:size-6" />
+            <Cancel width={16} height={16} alt="X" />
           </Button>
 
           <ul className="mt-6 flex flex-col gap-6">

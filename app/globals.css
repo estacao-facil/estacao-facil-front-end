@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-white text-text min-h-screen max-w-full;
+    @apply bg-white text-text min-h-screen max-w-full overflow-x-clip;
   }
 }
 
@@ -12,10 +12,24 @@
   .flex-center {
     @apply flex items-center justify-center;
   }
+
   .size-screen {
     @apply h-screen w-screen;
   }
+
+  .button {
+    @apply cursor-pointer rounded-lg bg-primary px-4 py-2 font-bold uppercase text-text-contrast transition-all duration-300 hover:bg-primary-400;
+  }
+
+  .h1 {
+    @apply text-4xl md:text-[3.5rem] lg:text-[5rem];
+  }
+
   .link {
-    @apply hover:underline cursor-pointer hover:text-primary-400;
+    @apply hover:underline cursor-pointer hover:text-primary-400 transition-all duration-200;
+  }
+
+  .index-container {
+    @apply px-5 md:gap-5;
   }
 }
