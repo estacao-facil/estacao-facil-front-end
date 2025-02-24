@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Start = () => {
   return (
-    <section id="inicio" className="index-container gap-4 md:px-14">
+    <section id="inicio" className="index-container gap-4 md:gap-5">
       <div className="mt-[3.25rem] flex w-full flex-col items-center gap-10 md:mt-10 md:gap-5">
         <Image
           src="/images/logo.svg"

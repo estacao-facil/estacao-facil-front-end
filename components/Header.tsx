@@ -11,14 +11,14 @@ import AlignJustifyIcon from "@/public/icons/align-justify.svg"
 import Cancel from "@/public/icons/cancel.svg"
 
 const Header = () => {
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState<boolean>(true)
 
-  const [mobileMenu, setMobileMenu] = useState(false)
-  const lastScrollY = useRef(0)
+  const [mobileMenu, setMobileMenu] = useState<boolean>(false)
+  const lastScrollY = useRef<number>(0)
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY
+      const currentScrollY: number = window.scrollY
 
       setIsVisible(currentScrollY < lastScrollY.current)
       lastScrollY.current = currentScrollY
@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <header
-      className={`index-container sticky left-0 top-0 w-full overflow-x-clip transition-transform duration-300 ${isVisible || mobileMenu ? "translate-y-0" : "-translate-y-full"}`}
+      className={`index-container sticky left-0 top-0 w-full overflow-x-clip bg-white transition-transform duration-300 ${isVisible || mobileMenu ? "translate-y-0" : "-translate-y-full"}`}
     >
       <div className="flex items-center border-b border-border px-3 py-4 md:p-3 lg:px-5">
         <div className="flex gap-6">

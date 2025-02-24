@@ -30,6 +30,6 @@
   }
 
   .index-container {
-    @apply px-5 md:gap-5;
+    @apply px-5 md:px-14;
   }
 }

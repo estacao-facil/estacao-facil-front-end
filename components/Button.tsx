@@ -1,7 +1,6 @@
-import React from "react"
 import { twMerge } from "tailwind-merge"
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>
+import { ButtonProps } from "@/types"
 
 const Button = ({ children, className, ...props }: ButtonProps) => {
   return (
