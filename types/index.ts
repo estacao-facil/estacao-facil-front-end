@@ -15,4 +15,10 @@ export type ProductImagesType = {
   lg: ProductImageType
 }
 
+export type FeatureType = {
+  icon: string
+  title: string
+  description: string
+}
+
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>

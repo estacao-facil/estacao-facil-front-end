@@ -37,12 +37,11 @@ const Product = () => {
       id="produto"
       className="index-container mt-[3.25rem] flex flex-col items-center gap-2 md:mt-16 lg:mt-24"
     >
-      <div className="grid w-full gap-5 md:grid-cols-2 md:grid-rows-2 md:gap-y-3">
+      <div className="grid w-full gap-5 md:grid-cols-2 md:grid-rows-2 md:gap-10 md:gap-y-5">
         <h2 className="text-center text-4xl font-bold !leading-snug md:self-end md:text-right md:!leading-tight lg:text-5xl">
           Cecília será
           <br /> sua assistente
         </h2>
-
         <div className="flex-center w-full md:row-span-2 lg:justify-start">
           {productImage ? (
             <Image
@@ -65,7 +64,6 @@ const Product = () => {
             </div>
           )}
         </div>
-
         <p className="text-center md:text-right">
           É só inciar uma conversa
           <br />e tirar suas dúvidas

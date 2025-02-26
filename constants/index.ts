@@ -1,4 +1,4 @@
-import { NavLinkType, ProductImagesType } from "@/types"
+import { FeatureType, NavLinkType, ProductImagesType } from "@/types"
 
 export const navLinks: NavLinkType[] = [
   {
@@ -36,3 +36,23 @@ export const productImages: ProductImagesType = {
     height: 633,
   },
 }
+
+export const features: FeatureType[] = [
+  {
+    icon: "qr-code",
+    title: "Detecção de Localidade",
+    description:
+      "Escaneie um dos QR Codes disponíveis pela estação para identificar sua posição.",
+  },
+  {
+    icon: "clock",
+    title: "Informações em Tempo Real",
+    description:
+      "Receba atualizações sobre horários, atrasos e lotação dos trens.",
+  },
+  {
+    icon: "map",
+    title: "Dicas e Recomendações",
+    description: "Encontre restaurantes próximos às estações.",
+  },
+]
