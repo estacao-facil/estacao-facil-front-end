@@ -1,8 +1,8 @@
-import { features } from "@/constants"
-
 import Clock from "@/public/icons/clock.svg"
 import Map from "@/public/icons/map.svg"
 import QRCode from "@/public/icons/qr-code.svg"
+
+import { features } from "@/constants"
 
 const featuresIcons = {
   "qr-code": QRCode,
@@ -12,33 +12,29 @@ const featuresIcons = {
 
 const Features = () => {
   return (
-    <section className="index-container mt-[3.25rem] grid gap-12 md:mt-16 lg:mt-24 md:grid-cols-2 md:grid-rows-2 md:gap-10 md:gap-y-5">
-      <h2 className="text-center text-4xl font-bold !leading-snug md:!leading-tight lg:text-5xl md:text-left md:self-end">
+    <section className="section-container grid items-center gap-12 md:grid-cols-2 md:grid-rows-2 md:gap-x-5 md:gap-y-3 lg:gap-x-10 lg:gap-y-5">
+      <h2 className="h2 text-center font-bold md:self-end md:text-left">
         Principais
         <br />
         Funcionalidades
       </h2>
-      <div className="flex flex-col gap-5 row-span-2 md:-order-1 items-center w-full lg:items-end">
+      <div className="flex w-full flex-col items-center gap-5 md:-order-1 md:row-span-2 lg:items-end">
         {features.map(({ icon, title, description }, i) => {
-          const IconComponent = featuresIcons[icon]
+          const Icon = featuresIcons[icon]
 
           return (
             <div
               key={i}
-              className="border border-border rounded-lg p-3 w-full max-w-[424px]"
+              className="w-full max-w-[424px] rounded-lg border border-border p-3"
             >
-              <IconComponent
-                className="text-icon-placeholder"
-                width={24}
-                height={24}
-              />
+              <Icon width={24} height={24} className="text-icon-placeholder" />
               <h3 className="mt-2 font-bold">{title}</h3>
               <p className="text-sm">{description}</p>
             </div>
           )
         })}
       </div>
-      <p className="font-bold text-xl md:text-base text-center md:font-normal md:self-start md:text-left">
+      <p className="-mt-7 text-center text-xl font-bold md:mt-0 md:self-start md:text-left md:text-base md:font-normal">
         E muitas outras!
       </p>
     </section>

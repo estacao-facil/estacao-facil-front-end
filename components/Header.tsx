@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <header
-      className={`index-container sticky left-0 top-0 w-full overflow-x-clip bg-white transition-transform duration-300 ${isVisible || mobileMenu ? "translate-y-0" : "-translate-y-full"}`}
+      className={`sticky left-0 top-0 w-full overflow-x-clip bg-white px-5 transition-transform duration-300 md:px-14 ${isVisible || mobileMenu ? "translate-y-0" : "-translate-y-full"}`}
     >
       <div className="flex items-center border-b border-border px-3 py-4 md:p-3 lg:px-5">
         <div className="flex gap-6">
@@ -56,7 +56,7 @@ const Header = () => {
           <Link href="/cadastro" className="link hidden md:block">
             Cadastrar-se
           </Link>
-          <Link href="/login" className="button text-xs md:text-base">
+          <Link href="/login" className="btn-primary text-xs md:text-base">
             Login
           </Link>
           <Button
@@ -67,28 +67,28 @@ const Header = () => {
             <AlignJustifyIcon width={16} height={16} />
           </Button>
         </div>
-      </div>
 
-      <div
-        className={`size-screen absolute left-0 top-0 bg-black/50 transition-opacity duration-300 lg:hidden ${mobileMenu ? "opacity-100" : "pointer-events-none opacity-0"}`}
-        onClick={() => setMobileMenu(false)}
-      >
         <div
-          className={`absolute right-0 top-0 h-screen w-72 bg-white px-8 py-4 shadow-lg transition-transform duration-300 ease-in-out md:w-96 ${
-            mobileMenu ? "translate-x-0" : "translate-x-full"
-          }`}
+          className={`size-screen absolute left-0 top-0 bg-black/50 transition-opacity duration-300 lg:hidden ${mobileMenu ? "opacity-100" : "pointer-events-none opacity-0"}`}
+          onClick={() => setMobileMenu(false)}
         >
-          <Button
-            className="button ml-auto block !p-2 md:!p-3"
-            aria-label="Fechar menu mobile"
-            onClick={() => setMobileMenu(false)}
+          <div
+            className={`absolute right-0 top-0 h-screen w-72 bg-white px-8 py-4 shadow-lg transition-transform duration-300 ease-in-out md:w-96 ${
+              mobileMenu ? "translate-x-0" : "translate-x-full"
+            }`}
           >
-            <Cancel width={16} height={16} alt="X" />
-          </Button>
+            <Button
+              className="btn-primary ml-auto block !p-2 md:!p-3"
+              aria-label="Fechar menu mobile"
+              onClick={() => setMobileMenu(false)}
+            >
+              <Cancel width={16} height={16} alt="X" />
+            </Button>
 
-          <ul className="mt-6 flex flex-col gap-6">
-            <NavLinks />
-          </ul>
+            <ul className="mt-6 flex flex-col gap-6">
+              <NavLinks />
+            </ul>
+          </div>
         </div>
       </div>
     </header>

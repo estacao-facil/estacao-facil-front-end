@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-white text-text min-h-screen max-w-full overflow-x-clip;
+    @apply max-w-full overflow-x-clip bg-white text-text;
   }
 }
 
@@ -17,19 +17,23 @@
     @apply h-screen w-screen;
   }
 
-  .button {
-    @apply cursor-pointer rounded-lg bg-primary px-4 py-2 font-bold uppercase text-text-contrast transition-all duration-300 hover:bg-primary-400;
+  .section-container {
+    @apply mt-[3.25rem] w-full px-5 md:mt-10 md:px-14;
   }
 
   .h1 {
-    @apply text-4xl md:text-[3.5rem] lg:text-[5rem];
+    @apply text-4xl leading-snug md:text-[3.5rem] md:leading-tight lg:text-[5rem];
+  }
+
+  .h2 {
+    @apply text-4xl leading-snug md:leading-tight lg:text-5xl;
+  }
+
+  .btn-primary {
+    @apply cursor-pointer rounded-lg bg-primary px-4 py-2 text-center font-bold uppercase text-text-contrast transition-all duration-300 hover:bg-primary-400;
   }
 
   .link {
-    @apply hover:underline cursor-pointer hover:text-primary-400 transition-all duration-200;
-  }
-
-  .index-container {
-    @apply px-5 md:px-14;
+    @apply cursor-pointer transition-all duration-200 hover:text-primary-400 hover:underline;
   }
 }

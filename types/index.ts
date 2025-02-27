@@ -21,4 +21,17 @@ export type FeatureType = {
   description: string
 }
 
-export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>
+export type Question = {
+  question: string
+  response: React.ReactNode
+}
+
+export type ButtonProps = {
+  children: string | React.ReactNode
+  className: string
+} & React.ButtonHTMLAttributes<HTMLButtonElement>
+
+export type AccordionProps = {
+  title: string
+  children: React.ReactNode
+} & React.HTMLAttributes<HTMLDivElement>
