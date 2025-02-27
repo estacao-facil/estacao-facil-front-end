@@ -1,6 +1,10 @@
 import { FeatureType, NavLinkType, ProductImagesType, Question } from "@/types"
 import Link from "next/link"
 
+import Clock from "@/public/icons/clock.svg"
+import Map from "@/public/icons/map.svg"
+import QRCode from "@/public/icons/qr-code.svg"
+
 export const navLinks: NavLinkType[] = [
   {
     label: "Inicio",
@@ -40,19 +44,19 @@ export const productImages: ProductImagesType = {
 
 export const features: FeatureType[] = [
   {
-    icon: "qr-code",
+    Icon: QRCode,
     title: "Detecção de Localidade",
     description:
       "Escaneie um dos QR Codes disponíveis pela estação para identificar sua posição.",
   },
   {
-    icon: "clock",
+    Icon: Clock,
     title: "Informações em Tempo Real",
     description:
       "Receba atualizações sobre horários, atrasos e lotação dos trens.",
   },
   {
-    icon: "map",
+    Icon: Map,
     title: "Dicas e Recomendações",
     description: "Encontre restaurantes próximos às estações.",
   },

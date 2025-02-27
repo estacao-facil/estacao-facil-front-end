@@ -1,14 +1,4 @@
-import Clock from "@/public/icons/clock.svg"
-import Map from "@/public/icons/map.svg"
-import QRCode from "@/public/icons/qr-code.svg"
-
 import { features } from "@/constants"
-
-const featuresIcons = {
-  "qr-code": QRCode,
-  clock: Clock,
-  map: Map,
-}
 
 const Features = () => {
   return (
@@ -19,9 +9,7 @@ const Features = () => {
         Funcionalidades
       </h2>
       <div className="flex w-full flex-col items-center gap-5 md:-order-1 md:row-span-2 lg:items-end">
-        {features.map(({ icon, title, description }, i) => {
-          const Icon = featuresIcons[icon]
-
+        {features.map(({ Icon, title, description }, i) => {
           return (
             <div
               key={i}

@@ -11,7 +11,7 @@ const FAQ = () => {
         <br />
         Frequentes
       </h2>
-      <div className="item-center flex w-full flex-col gap-5 md:max-w-[440px] lg:max-w-[650px]">
+      <div className="flex w-full flex-col items-center gap-5 md:max-w-[440px] lg:max-w-[650px]">
         {questions.map(({ question, response }, i) => (
           <Accordion key={i} title={question}>
             {response}

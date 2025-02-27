@@ -16,7 +16,7 @@ export type ProductImagesType = {
 }
 
 export type FeatureType = {
-  icon: string
+  Icon: React.ElementType
   title: string
   description: string
 }

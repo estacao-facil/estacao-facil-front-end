@@ -1,3 +1,4 @@
+import CallToAction from "@/components/CallToAction"
 import FAQ from "@/components/FAQ"
 import Features from "@/components/Features"
 import Header from "@/components/Header"
@@ -21,6 +22,7 @@ const Home = () => {
         <Product />
         <Features />
         <FAQ />
+        <CallToAction />
       </main>
     </>
   )
