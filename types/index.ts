@@ -28,10 +28,14 @@ export type Question = {
 
 export type ButtonProps = {
   children: string | React.ReactNode
-  className: string
+  className?: string
 } & React.ButtonHTMLAttributes<HTMLButtonElement>
 
 export type AccordionProps = {
   title: string
   children: React.ReactNode
 } & React.HTMLAttributes<HTMLDivElement>
+
+export type FooterProps = {
+  className?: string
+} & React.HTMLAttributes<HTMLElement>

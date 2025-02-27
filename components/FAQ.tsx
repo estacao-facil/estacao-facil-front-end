@@ -5,7 +5,10 @@ import Accordion from "./Accordion"
 
 const FAQ = () => {
   return (
-    <section className="section-container flex flex-col items-center gap-5 lg:gap-10">
+    <section
+      id="perguntas-frequentes"
+      className="section-container flex flex-col items-center gap-5 lg:gap-10"
+    >
       <h2 className="h2 text-center font-bold">
         Perguntas
         <br />

@@ -32,10 +32,10 @@ const Header = () => {
   }, [])
 
   return (
-    <header
-      className={`sticky left-0 top-0 w-full overflow-x-clip bg-white px-5 transition-transform duration-300 md:px-14 ${isVisible || mobileMenu ? "translate-y-0" : "-translate-y-full"}`}
-    >
-      <div className="flex items-center border-b border-border px-3 py-4 md:p-3 lg:px-5">
+    <>
+      <header
+        className={`shadow-bottom sticky left-0 top-0 flex w-full items-center justify-between bg-white px-8 py-4 transition-transform duration-300 md:p-3 md:px-[4.75rem] lg:px-5 ${isVisible || mobileMenu ? "translate-y-0" : "-translate-y-full"}`}
+      >
         <div className="flex gap-6">
           <Link href="/">
             <Image
@@ -46,13 +46,11 @@ const Header = () => {
               className="h-8 w-auto md:h-10"
             />
           </Link>
-
           <ul className="hidden items-center gap-4 lg:flex">
             <NavLinks />
           </ul>
         </div>
-
-        <div className="ml-auto flex items-center gap-2 md:gap-4">
+        <div className="flex items-center gap-2 md:gap-4">
           <Link href="/cadastro" className="link hidden md:block">
             Cadastrar-se
           </Link>
@@ -67,31 +65,27 @@ const Header = () => {
             <AlignJustifyIcon width={16} height={16} />
           </Button>
         </div>
-
+      </header>
+      <div
+        className={`fixed inset-0 bg-black/50 transition-opacity duration-300 lg:hidden ${mobileMenu ? "opacity-100" : "pointer-events-none opacity-0"}`}
+        onClick={() => setMobileMenu(false)}
+      >
         <div
-          className={`size-screen absolute left-0 top-0 bg-black/50 transition-opacity duration-300 lg:hidden ${mobileMenu ? "opacity-100" : "pointer-events-none opacity-0"}`}
-          onClick={() => setMobileMenu(false)}
+          className={`absolute right-0 top-0 h-screen w-72 bg-white px-8 py-4 shadow-lg transition-transform duration-300 ease-in-out md:w-96 ${mobileMenu ? "translate-x-0" : "translate-x-full"}`}
         >
-          <div
-            className={`absolute right-0 top-0 h-screen w-72 bg-white px-8 py-4 shadow-lg transition-transform duration-300 ease-in-out md:w-96 ${
-              mobileMenu ? "translate-x-0" : "translate-x-full"
-            }`}
+          <Button
+            className="btn-primary ml-auto block !p-2 md:!p-3"
+            aria-label="Fechar menu mobile"
+            onClick={() => setMobileMenu(false)}
           >
-            <Button
-              className="btn-primary ml-auto block !p-2 md:!p-3"
-              aria-label="Fechar menu mobile"
-              onClick={() => setMobileMenu(false)}
-            >
-              <Cancel width={16} height={16} alt="X" />
-            </Button>
-
-            <ul className="mt-6 flex flex-col gap-6">
-              <NavLinks />
-            </ul>
-          </div>
+            <Cancel width={16} height={16} alt="X" />
+          </Button>
+          <ul className="mt-6 flex flex-col gap-6">
+            <NavLinks />
+          </ul>
         </div>
       </div>
-    </header>
+    </>
   )
 }
 

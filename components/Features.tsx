@@ -2,7 +2,10 @@ import { features } from "@/constants"
 
 const Features = () => {
   return (
-    <section className="section-container grid items-center gap-12 md:grid-cols-2 md:grid-rows-2 md:gap-x-5 md:gap-y-3 lg:gap-x-10 lg:gap-y-5">
+    <section
+      id="funcionalidades"
+      className="section-container grid items-center gap-12 md:grid-cols-2 md:grid-rows-2 md:gap-x-5 md:gap-y-3 lg:gap-x-10 lg:gap-y-5"
+    >
       <h2 className="h2 text-center font-bold md:self-end md:text-left">
         Principais
         <br />

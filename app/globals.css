@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply max-w-full overflow-x-clip bg-white text-text;
   }
@@ -35,5 +39,9 @@
 
   .link {
     @apply cursor-pointer transition-all duration-200 hover:text-primary-400 hover:underline;
+  }
+
+  .shadow-bottom {
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1);
   }
 }

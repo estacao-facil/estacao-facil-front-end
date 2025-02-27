@@ -1,11 +1,11 @@
+import Train from "@/public/images/train.svg"
+
 import CallToAction from "@/components/CallToAction"
 import FAQ from "@/components/FAQ"
 import Features from "@/components/Features"
 import Header from "@/components/Header"
 import Product from "@/components/Product"
 import Start from "@/components/Start"
-
-import Train from "@/public/images/train.svg"
 
 const Home = () => {
   return (
