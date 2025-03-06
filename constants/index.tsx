@@ -8,7 +8,7 @@ import QRCode from "@/public/icons/qr-code.svg"
 export const navLinks: NavLinkType[] = [
   {
     label: "Inicio",
-    url: "/#",
+    url: "/#inicio",
   },
   {
     label: "Produto",

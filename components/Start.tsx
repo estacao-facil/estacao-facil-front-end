@@ -5,7 +5,7 @@ const Start = () => {
   return (
     <section
       id="inicio"
-      className="section-container flex flex-col items-center gap-10 md:gap-5"
+      className="section-container flex scroll-mt-16 flex-col items-center gap-10 md:gap-5"
     >
       <Image
         src="/images/logo.svg"

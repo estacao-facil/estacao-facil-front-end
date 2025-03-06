@@ -4,7 +4,7 @@ const Features = () => {
   return (
     <section
       id="funcionalidades"
-      className="section-container grid items-center gap-12 md:grid-cols-2 md:grid-rows-2 md:gap-x-5 md:gap-y-3 lg:gap-x-10 lg:gap-y-5"
+      className="section-container grid scroll-mt-16 items-center gap-12 md:grid-cols-2 md:grid-rows-2 md:gap-x-5 md:gap-y-3 lg:gap-x-10 lg:gap-y-5"
     >
       <h2 className="h2 text-center font-bold md:self-end md:text-left">
         Principais

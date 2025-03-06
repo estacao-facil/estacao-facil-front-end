@@ -7,7 +7,7 @@ const FAQ = () => {
   return (
     <section
       id="perguntas-frequentes"
-      className="section-container flex flex-col items-center gap-5 lg:gap-10"
+      className="section-container flex scroll-mt-16 flex-col items-center gap-5 lg:gap-10"
     >
       <h2 className="h2 text-center font-bold">
         Perguntas

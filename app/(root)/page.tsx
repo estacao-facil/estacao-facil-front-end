@@ -1,3 +1,5 @@
+"use client"
+
 import Train from "@/public/images/train.svg"
 
 import CallToAction from "@/components/CallToAction"

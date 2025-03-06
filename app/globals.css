@@ -10,6 +10,29 @@
   body {
     @apply max-w-full overflow-x-clip bg-white text-text;
   }
+
+  ::-webkit-scrollbar {
+    @apply h-2 w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply rounded-lg bg-primary-100 p-1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full border border-solid border-primary-100 bg-primary;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-600;
+  }
+
+  @-moz-document url-prefix() {
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: #006ffd #cce6ff;
+    }
+  }
 }
 
 @layer utilities {
