@@ -28,7 +28,7 @@ const Start = () => {
 
       <div className="flex w-full max-w-[340px] flex-col items-center md:gap-2">
         <Link href="/chat" className="btn-primary w-full">
-          Começe Agora
+          Comece Agora
         </Link>
         <p className="text-sm">
           Se{" "}
